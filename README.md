@@ -14,6 +14,17 @@ UkagakaWebBrowsingは拡張機能アイコンをクリックすることで、
 
 (OnUWBShowPageInfoイベント、Reference0にタイトル、Reference1にURLが入ります)
 
+## 拡張機能アイコンが出てこない場合
+
+下図のように、ジグソーパズルアイコンをクリックして、UkagakaWebBrowsingをピン留めしてください。
+
+<img width="411" alt="image" src="https://user-images.githubusercontent.com/19942540/236590538-c2272fd2-7c8e-4442-9beb-7bf8ad10434d.png">
+
+ピン留め後、拡張機能アイコンが表示され、クリックできるようになります。
+
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/19942540/236590654-96592c7e-53a1-4e23-aa17-cf71575996e5.png">
+
+
 ## 下記、イベント実装例(開発者向け)
 
 ### 里々
