@@ -11,7 +11,9 @@ Sender: UkagakaWebBrowsing
 Event: OnUWBShowPageInfo
 SecurityLevel: local
 Reference0: ${title}
-Reference1: ${url}`;
+Reference1: ${url}
+
+`;
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "http://localhost:9801/api/sstp/v1", true);
