@@ -24,6 +24,9 @@ UkagakaWebBrowsingは拡張機能アイコンをクリックすることで、
 
 <img width="283" alt="image" src="https://user-images.githubusercontent.com/19942540/236590654-96592c7e-53a1-4e23-aa17-cf71575996e5.png">
 
+## ほか、制限事項
+
+httpsじゃないWebサイトだと制限かかって動かないけどそれは許して……
 
 ## 下記、イベント実装例(開発者向け)
 
