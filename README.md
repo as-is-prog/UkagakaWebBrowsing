@@ -45,4 +45,12 @@ OnUWBShowPageInfo
 
   "「%(_pageTitle)」を見ているんですね。URLは「%(_pageURL)」ですか。\e"
 }
+
+ExternalEvent.OnUWBShowPageInfo
+{
+    OnUWBShowPageInfo()
+}
 ```
+"ExternalEvent.OnUWBShowPageInfo"はSSTPがSecurity Level: externalで通知されるため、それを明示的に受け付けるための記載。
+
+基本的にはExternal...だけでもこの拡張機能は動作しますが、古いシステム辞書を使っている場合は"OnUWBShowPageInfo"での定義が必要です。
