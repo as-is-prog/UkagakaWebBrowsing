@@ -31,17 +31,14 @@ httpsじゃないWebサイトだと制限かかって動かないけどそれは
 ## 下記、イベント実装例(開発者向け)
 
 ### 里々
-```
-＊OnUWBShowPageInfo
-：（R0）を見ているんですね。URLは（R1）ですか。
-```
+里々では`Security Level: external`のもとでSakurScriptタグをエスケープする方法が無いため、非推奨。
 
 ### YAYA
 ```C
 OnUWBShowPageInfo
 {
-  _pageTitle = reference[0]
-  _pageURL = reference[1]
+  _pageTitle = SHIORI3FW.EscapeAllTags(reference[0])
+  _pageURL = SHIORI3FW.EscapeAllTags(reference[1])
 
   "「%(_pageTitle)」を見ているんですね。URLは「%(_pageURL)」ですか。\e"
 }
@@ -51,6 +48,7 @@ ExternalEvent.OnUWBShowPageInfo
     OnUWBShowPageInfo()
 }
 ```
-"ExternalEvent.OnUWBShowPageInfo"はSSTPがSecurity Level: externalで通知されるため、それを明示的に受け付けるための記載。
+`SHIORI3FW.EscapeAllTags`はYAYAのシステム辞書optional.dicにある全てのSakurScriptタグをエスケープ（\付加）する関数。  
+`ExternalEvent.OnUWBShowPageInfo`はSSTPが`Security Level: external`で通知されるため、それを明示的に受け付けるための記載。
 
 基本的にはExternal...だけでもこの拡張機能は動作しますが、古いシステム辞書を使っている場合は"OnUWBShowPageInfo"での定義が必要です。
