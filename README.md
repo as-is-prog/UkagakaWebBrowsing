@@ -32,6 +32,7 @@ httpsじゃないWebサイトだと制限かかって動かないけどそれは
 
 ### 里々
 里々では`Security Level: external`のもとでSakurScriptタグをエスケープする方法が無いため、非推奨。
+(TODO: Mc167-1以降では方法がありそうなのでわかれば追記)
 
 ### YAYA
 ```C
