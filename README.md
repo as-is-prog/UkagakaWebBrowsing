@@ -53,7 +53,7 @@ ExternalEvent.OnUWBShowPageInfo
 ### 里々
 YAYAのシステム辞書関数相当の処理を実行したうえで使用。
 `ExternalEvent.OnUWBShowPageInfo`は里々Mc167-1以降で、
-[外部から実行可能なイベントの接頭辞|http://soliton.sub.jp/satori/?%E7%89%B9%E6%AE%8A%E5%A4%89%E6%95%B0#qe875f29]を"ExternalEvent."として定義している前提。
+[外部から実行可能なイベントの接頭辞](http://soliton.sub.jp/satori/?%E7%89%B9%E6%AE%8A%E5%A4%89%E6%95%B0#qe875f29))を"ExternalEvent."として定義している前提。
 ```
 ＊ExternalEvent.OnUWBShowPageInfo
 ＞OnUWBShowPageInfo
